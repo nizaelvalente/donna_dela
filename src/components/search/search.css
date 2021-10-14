@@ -1,0 +1,40 @@
+._aside_search {
+    position: absolute;
+    width: 30rem;
+    background: var(--gray);
+    top: -15rem;
+    right: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    opacity: 0;
+    box-shadow: 1px 1px 8px var(--gray);
+    border-radius: 2rem;
+    transition: all 0.5s;
+}
+
+._aside_search_visible {
+    top: 0.75rem;
+    opacity: 1;
+}
+
+._search {
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 600px) {
+    ._aside_search {
+       right: 0;
+       width: 100%;
+    }
+
+    ._aside_search_visible {
+        top: 6rem;
+    }
+    
+}

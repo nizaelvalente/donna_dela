@@ -1,0 +1,132 @@
+._header {
+    width: 100%;
+    height: 6rem;
+    border-bottom: solid 0.2rem var(--gray);
+    color: var(--black_gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+._logo_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+._logo {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--black);
+    font-family: 'Overpass', sans-serif;
+    padding-right: 0.5rem;
+}
+
+._logo span:first-child {
+    color: var(--green);
+}
+
+._nav_menu ul {
+    display: flex;
+    align-items: center;
+}
+
+._item_menu {
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-bottom: solid 1px transparent;
+}
+
+._item_menu:hover ._menu_item_ctegory{
+    display: block;
+}
+
+._item_menu:hover {
+    border-bottom-color: var(--green);
+}
+
+._menu_item_ctegory {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    display: none;
+    transition: all 0.5s;
+}
+._item_category {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+._item_category:hover {
+    background: var(--gray);
+}
+
+._button_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+._icon_svg {
+    margin: 0.7rem;
+    cursor: pointer;
+    border-bottom: solid 1px transparent;
+}
+
+._icon_svg:hover {
+    border-bottom-color: var(--green);
+}
+
+._menu_moble {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    ._header {
+        padding: 1rem;
+    }
+    ._logo_container {
+        width: 100%;
+        justify-content: center;
+    }
+    ._nav_menu {
+        display: block;
+        position: absolute;
+        top: 6rem;
+        width: 90vw;
+        right: -90vw;
+        opacity: 0;
+        padding: 0.5rem;
+        background: var(--green);
+        transition: all 0.5s;
+    }
+    ._nav_menu_visible {
+        right: 0;
+        opacity: 1;
+    }
+    
+    ._nav_menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ._item_menu {
+        color: var(--white);
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+    ._menu_moble {
+        display: block;
+        
+    }
+    
+}
