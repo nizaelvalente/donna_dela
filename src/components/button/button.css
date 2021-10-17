@@ -8,16 +8,7 @@
 }
 
 ._button_cart {
-    background: var(--green);
+    background: var(--primary-color);
     color: var(--white);
     width: 50%;
-}
-
-._button_yellow {
-    background-color: var(--yellow);
-}
-
-._button_blue {
-    background-color: var(--blue);
-    color: var(--white);
 }
