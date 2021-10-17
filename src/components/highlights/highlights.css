@@ -1,0 +1,10 @@
+
+._highlights_title_body {
+    width: 100vw;
+    text-align: center;
+    background: var(--secondary-color-three);
+
+}
+._highlights_title{
+    font-size: 2.5rem;
+}

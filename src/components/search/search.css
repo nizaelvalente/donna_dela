@@ -1,7 +1,7 @@
 ._aside_search {
     position: absolute;
     width: 30rem;
-    background: var(--gray);
+    background: var(--secondary-color-three);
     top: -15rem;
     right: 15rem;
     display: flex;
@@ -9,9 +9,10 @@
     justify-content: space-between;
     padding: 0.5rem;
     opacity: 0;
-    box-shadow: 1px 1px 8px var(--gray);
+    box-shadow: 1px 1px 8px var(--secondary-color-three);
     border-radius: 2rem;
     transition: all 0.5s;
+    z-index: 2;
 }
 
 ._aside_search_visible {

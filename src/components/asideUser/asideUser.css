@@ -1,12 +1,13 @@
 ._aside_user {
     width: 25vw;
     height: 70vh;
-    background: var(--gray);
+    background: var(--secondary-color-three);
     position: absolute;
     right: -25vw;
     opacity: 0;
     top: 6rem;
     transition: all 0.5s;
+    z-index: 1;
 }
 
 ._aside_user_visible {
@@ -17,7 +18,7 @@
 ._close_user {
     position: absolute;
     left: 0.5rem;
-    background: var(--green);
+    background: var(--primary-color);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;

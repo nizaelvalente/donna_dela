@@ -1,0 +1,43 @@
+._carousel {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+._carousel_body {
+    width: 80vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+._carousel_body::-webkit-scrollbar {
+    display: none;
+}
+
+._buttons_arrow {
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+._buttons_arrow {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    ._carousel {
+        padding: 0;
+    }
+
+    ._carousel_body {
+        width: 100vw;
+    }
+    
+}

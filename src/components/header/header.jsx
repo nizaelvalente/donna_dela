@@ -53,7 +53,7 @@ export const Header = (params) => {
                 <ul>
                     <li className="_item_menu">Novidades</li>
                     <li className="_item_menu">Categorias
-                        <ul className="_menu_item_ctegory">
+                        <ul className="_menu_item_category">
                             <li className="_item_category">Calças</li>
                             <li className="_item_category">Bermudas</li>
                             <li className="_item_category">Shorts</li>
@@ -82,7 +82,7 @@ export const Header = (params) => {
                     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                 </svg>
             </div>
-            <AsideCart _ref={asideCart} _click={handleClickCart} />
+            <AsideCart _ref={asideCart} _click={handleClickCart} _products ={params._products} />
             <AsideUser _ref={asideUser}  _click={handleClickUser}/>
         </header>
     )
